@@ -1,0 +1,12 @@
+.containerLoginCard{
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 8px;
+    box-shadow: 0px -5px 20px #cacaca;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    width: 400px;
+    background-color: #fff;
+    display: inline-block; /*lo centra?*/
+}

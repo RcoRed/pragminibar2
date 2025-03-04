@@ -1,0 +1,15 @@
+.buttonBlue{
+    height: 36px;
+    width: 132px;
+    padding: 0 16px;
+    border: 2px solid #243256;
+    border-radius: 24px;
+    background-color: #243256;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}

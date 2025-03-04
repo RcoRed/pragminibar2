@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "pragminibar2",
     "public": "public",
     "ignore": [
       "firebase.json",

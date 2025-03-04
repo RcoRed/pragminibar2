@@ -1,3 +1,295 @@
-*{
-    margin: 0;
+* {
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body{
+  background-color: #f0f2f4;
+}
+
+h1{
+  font-weight: 300;
+  font-size: 30px;
+  color: #505c83;
+}
+
+h2{
+  font-weight: 300;
+  font-size: 32px;
+  color: #505c83;
+}
+
+p{
+  font-weight: 400;
+  font-size: 16px;
+  /*color: #424548;*/
+  margin: 0;
+  padding: 0;
+}
+
+.big{
+  font-size: 17px;
+}
+
+/*
+  COLOR
+*/
+.bgColorWhite{
+  background-color: #fff;
+}
+
+.bgColorLightGray{
+  background-color: #f7f8f9;
+}
+
+.bgColorDarkGray{
+  background-color: #919eac;
+}
+
+.bgColorGrayBlue{
+  background-color: #7E89B3;
+}
+
+.bgColorDarkBlueTrasparent{
+  background-color: rgb(18 35 68 / 90%);
+}
+
+.colorBlack {
+  color: #000;
+}
+
+.colorWhite{
+  color: #fff
+}
+
+.colorDarkGray{
+  color: #919eac;
+}
+
+.colorGray{
+  color: #cad1d8;
+}
+
+.colorDarkBlue{
+  color: #243256;
+}
+
+.coloRed{
+  color: rgb(247, 91, 91);
+}
+
+/*
+RESET BOOTSTRAP
+*/
+.container-fluid{
+  padding: 0;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.dropdown-menu{
+  padding: 0;
+}
+
+/*
+  FONT SIZE
+*/
+.fontSize11{
+  font-size: 11px;
+}
+
+.fontSize12{
+  font-size: 12px;
+}
+
+.fontSize14{
+  font-size: 14px;
+}
+
+.fontSize20{
+  font-size: 20px;
+}
+
+
+/*
+  DEFINIZIONE INPUT
+*/
+.containerInput {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.containerInput label{
+  font-weight: 500;
+  color: #738596;
+  float: none;
+  padding: 8px 3px;
+  padding-bottom: 4px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.containerInput .floatingLabel{
+  position: absolute;
+  top: 50%; /*lo spost arelativo al contenitore*/
+  transform: translateY(-50%); /*serve per 'centrare' la label. Lo sposta del 50% più in alto (relativo) della sua altezza*/
+  left: 10px;
+  color: #738596;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  line-height: none;
+  padding: 5px;
+  padding-bottom: 0px;
+  border-radius: 4px;
+}
+
+input{
+  height: auto;
+  padding: 10px;
+  background-color: #fff;
+  color: #666;
+  box-shadow: inset 0 2px 4px 0 rgba(70, 82, 93, 0.1);
+  border: solid 1px #d9dee3;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/*da utilizzare solo in caso di browser che non supportano il focus-within o has. Ma la label deve essere DOPO l'input*/
+/*.containerInput input:focus + .floatingLabel,
+.containerInput input:not(:placeholder-shown) + .floatingLabel {
+    top: 10px;
+    font-size: 8px;
+    color: blue;
+}*/
+
+/*Metodo che funziona con la label PRIMA dell'input*/
+.containerInput:focus-within .floatingLabel,
+.containerInput:has(input:not(:placeholder-shown)) .floatingLabel,
+.containerInput:focus {
+  top: -1px;
+  font-size: 8px;
+  color: #738596;
+  background-color: #fff;
+}
+
+input:focus{
+  box-shadow: inset 0 0 0 1px rgba(124,138,255, 1);
+  border: 1px solid #7c8aff;
+}
+
+input:focus-visible{
+  outline: #7c8aff; /*serve per sovrascrivere l'outline di default che applica il browser*/
+}
+
+/*
+  BORDER
+*/
+.border0{
+  border: 0;
+}
+
+.borderTopWhite1{
+  border-top: 1px solid #fff;
+}
+
+/*
+  PADDING
+*/
+.padding30{
+  padding: 30px;
+}
+
+.padding12{
+  padding: 12px;
+}
+
+.padding10{
+  padding: 10px;
+}
+
+/*
+  MARGIN
+*/
+.margin15{
+  margin: 15px;
+}
+
+.marginBottom5{
+  margin-bottom: 5px;
+}
+
+.marginBottom15{
+  margin-bottom: 15px;
+}
+
+.marginBottom20{
+  margin-bottom: 20px;
+}
+
+.marginBottom40{
+  margin-bottom: 60px;
+}
+
+.marginLeft15{
+  margin-left: 15px;
+}
+
+.marginTop30{
+  margin-top: 30px;
+}
+
+.marginRight15{
+  margin-right: 15px;
+}
+
+.marginRight12{
+  margin-right: 12px;
+}
+
+/*
+  DYSPLAY FLEX & ALIGN
+*/
+.displayFlexRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.displayFlexColumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.alignItemsCenter{
+  align-items: center;
+}
+
+.justifyContentSpaceBetween{
+  justify-content: space-between;
+}
+
+/*
+  WHIDTH
+*/
+.width230{
+  width: 230px;
+}
+
+.width190{
+  width: 190px;
+}
+
+.width290{
+  width: 290px;
 }
